@@ -99,6 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim=lvim
 
+# =My Alias=
+# ==neovim==
+alias vim=lvim
+# ==flatpak==
+alias code='flatpak run com.visualstudio.code'
+
+# =My Env=
+# ==flatpak==
 export XDG_DATA_DIRS=/var/lib/flatpak/exports/share:/home/yang/.local/share/flatpak/exports/share:$XDG_DATA_DIRS
