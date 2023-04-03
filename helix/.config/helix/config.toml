@@ -1,0 +1,75 @@
+# =Theme=
+theme = "tokyonight_storm"
+
+# =Editor=
+[editor]
+line-number = "relative"
+mouse = true
+scrolloff = 5
+middle-click-paste = true
+scroll-lines = 3
+shell = ["/usr/bin/zsh","-c"]
+cursorline = true
+cursorcolumn = false
+gutters = ["diagnostics", "spacer", "line-numbers", "spacer", "diff"]
+auto-completion = true
+auto-format = true
+auto-save = false
+idle-timeout = 300
+completion-trigger-len = 2
+auto-info = true
+true-color = true
+rulers = [80]
+bufferline = "always"
+color-modes = true
+
+# ==Editor statusline==
+[editor.statusline]
+left = ["mode","spinner","file-name"]
+center = []
+right = ["diagnostics","selections","position","file-encoding"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+# ==Editor lsp==
+[editor.lsp]
+display-messages = false
+auto-signature-help = true
+display-signature-help-docs = true
+
+# ==Editor cursor-shape==
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+# ==Editor file-picker==
+[editor.file-picker]
+hidden = false
+parents = true
+ignore = true
+git-ignore = true
+git-global = true
+git-exclude = true
+# max-depth  Defaults to None
+
+# ==Editor auto-pairs==
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
+
+# ==Editor whitespace==
+[editor.whitespace]
+render = "all"
+
+# ==Editor indent-guides==
+[editor.indent-guides]
+render = true
+character = "┊"
+skip-levels = 0
