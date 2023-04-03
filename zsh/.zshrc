@@ -105,6 +105,8 @@ source $ZSH/oh-my-zsh.sh
 alias vim=lvim
 # ==flatpak==
 alias code='flatpak run com.visualstudio.code'
+# ==podman==
+alias docker=podman
 
 # =My Env=
 # ==flatpak==
