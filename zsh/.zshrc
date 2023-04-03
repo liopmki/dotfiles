@@ -107,6 +107,8 @@ alias vim=lvim
 alias code='flatpak run com.visualstudio.code'
 # ==podman==
 alias docker=podman
+# ==helix==
+alias hx=helix
 
 # =My Env=
 # ==flatpak==
