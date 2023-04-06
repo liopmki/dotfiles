@@ -12,6 +12,10 @@
 
 ### Linux
 
+**核心思想：**
+1. 将caps映射成ctrl（caps与ctrl交换等等）
+2. 使用xcape实现单次点击ctrl为esc`/usr/bin/xcape -e 'Control_L=Escape'`(-t 参数表示视为单次点击的时间)
+
 [基本实现-bash script](./caps2escAndctrl.sh)
 
 > 详细信息 [archwiki-keyboard_configuration](https://wiki.archlinux.org/title/Xorg/Keyboard_configuration#One-click_key_functions)
