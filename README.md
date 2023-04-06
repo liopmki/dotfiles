@@ -26,7 +26,7 @@ echo $XDG_SESSION_TYPE
 **TODO:**
 - [ ] 在不可变系统(Fedora Silverblue、OpenSuse Micro OS)和NixOS中实现
 
->  注意：这个切换ctrl和caps的命令可能不会生效
+> 这个切换ctrl和caps的命令可能不会生效
 > 我在popos的gnome和endeavouros的budgie中测试，popos中可以生效
 > budgie中不会生效
 > 解决方法： budgie中安装gnome-tweak,然后配置ctrl的行为为切换ctrl和caps
@@ -35,7 +35,7 @@ echo $XDG_SESSION_TYPE
 ```shell
 echo "XKBOPTIONS="ctrl:swapcaps"" >> /etc/default/keyboard
 ```
-3. 安装`xcape`
+1. 安装`xcape`
 
 ```shell
 # arch
@@ -167,7 +167,6 @@ g_ControlRepeatDetected := false
 ~*^F12::
     g_AbortSendEsc := true
     return
-
 ```
 
 #### 自动启动
