@@ -23,7 +23,7 @@ echo $XDG_SESSION_TYPE
 ```
 2. 将`XKBOPTIONS="ctrl:swapcaps"` 添加到`/etc/default/keyboard`
 
-- [] 在不可变系统(Fedora Silverblue、OpenSuse Micro OS)和NixOS中实现
+- [ ] 在不可变系统(Fedora Silverblue、OpenSuse Micro OS)和NixOS中实现
 
 >  注意：这个切换ctrl和caps的命令可能不会生效
 > 我在popos的gnome和endeavouros的budgie中测试，popos中可以生效
