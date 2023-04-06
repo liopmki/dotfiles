@@ -12,6 +12,8 @@
 
 ### Linux
 
+[基本实现-bash script](./caps2escAndctrl.sh)
+
 > 详细信息 [archwiki-keyboard_configuration](https://wiki.archlinux.org/title/Xorg/Keyboard_configuration#One-click_key_functions)
   
 1. 检查是否是`X`协议
@@ -20,6 +22,14 @@
 echo $XDG_SESSION_TYPE
 ```
 2. 将`XKBOPTIONS="ctrl:swapcaps"` 添加到`/etc/default/keyboard`
+
+- [] 在不可变系统(Fedora Silverblue、OpenSuse Micro OS)和NixOS中实现
+
+>  注意：这个切换ctrl和caps的命令可能不会生效
+> 我在popos的gnome和endeavouros的budgie中测试，popos中可以生效
+> budgie中不会生效
+> 解决方法： budgie中安装gnome-tweak,然后配置ctrl的行为为切换ctrl和caps
+> 配置生效
 
 ```shell
 echo "XKBOPTIONS="ctrl:swapcaps"" >> /etc/default/keyboard

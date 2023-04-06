@@ -8,6 +8,11 @@ fi
 
 # append XKBOPTIONS to /etc/default/keyboard
 echo 'XKBOPTIONS="ctrl:swapcaps"' | sudo tee -a /etc/default/keyboard >/dev/null
+# 注意：这个切换ctrl和caps的命令可能不会生效
+# 我在popos的gnome和endeavouros的budgie中测试，popos中可以生效
+# budgie中不会生效
+# 解决方法： budgie中安装gnome-tweak,然后配置ctrl的行为为切换ctrl和caps
+# 配置生效
 
 # check and install xcape
 if ! command -v xcape >/dev/null 2>&1; then
