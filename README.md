@@ -36,6 +36,12 @@ echo $XDG_SESSION_TYPE
 > 解决方法： budgie中安装gnome-tweak,然后配置ctrl的行为为切换ctrl和caps
 > 配置生效
 
+**方法1:**
+- 需要`setxkbmap`包
+- `/usr/bin/setxkbmap -option "ctrl:nocaps"`
+- 将上面的命令开机启动
+    - xfce中使用会话与启动可以直接设置
+
 ```shell
 echo "XKBOPTIONS="ctrl:swapcaps"" >> /etc/default/keyboard
 ```
