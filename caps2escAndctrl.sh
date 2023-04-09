@@ -35,8 +35,8 @@ AUTOSTART_DIR="$HOME/.config/autostart"
 if [ ! -d "$AUTOSTART_DIR" ]; then
   mkdir -p "$AUTOSTART_DIR"
 fi
-sudo touch $AUTOSTART_DIR/xcape.desktop
-sudo cat > $AUTOSTART_DIR/xcape.desktop <<EOF
+touch $AUTOSTART_DIR/xcape.desktop
+cat > $AUTOSTART_DIR/xcape.desktop <<EOF
 [Desktop Entry]
 Name=Xcape
 Exec=/usr/bin/xcape -e 'Control_L=Escape'
@@ -45,5 +45,5 @@ Type=Application
 StartupNotify=true
 EOF
 
-sudo chmod +x ~/.config/autostart/xcape.desktop
+chmod +x ~/.config/autostart/xcape.desktop
 echo "配置自动启动完成"
