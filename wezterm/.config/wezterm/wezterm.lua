@@ -202,33 +202,35 @@ return {
     --     }
     -- },
 
-    color_scheme = 'Tokyo Night Storm (Gogh)',
+    -- color_scheme = 'Tokyo Night Storm (Gogh)',
+    -- color_scheme
+    color_scheme = "Catppuccin Macchiato",
 
-    colors = {
-        tab_bar = {
-            active_tab = {
-                bg_color = "#a9b1d6",
-                fg_color = "#edeff0",
-                italic = true
-            },
-            inactive_tab = {
-                bg_color = "#24283b",
-                fg_color = "#0c0e0f"
-            },
-            -- inactive_tab_hover = {
-            --     bg_color = "#151515",
-            --     fg_color = "#090909"
-            -- },
-            new_tab = {
-                bg_color = "#151515",
-                fg_color = "#090909"
-            },
-            new_tab_hover = {
-                bg_color = "#6791c9",
-                fg_color = "#090909"
-            },
-        },
-    },
+    -- colors = {
+    --     tab_bar = {
+    --         active_tab = {
+    --             bg_color = "#a9b1d6",
+    --             fg_color = "#edeff0",
+    --             italic = true
+    --         },
+    --         inactive_tab = {
+    --             bg_color = "#24283b",
+    --             fg_color = "#0c0e0f"
+    --         },
+    --         inactive_tab_hover = {
+    --             bg_color = "#151515",
+    --             fg_color = "#090909"
+    --         },
+    --         new_tab = {
+    --             bg_color = "#151515",
+    --             fg_color = "#090909"
+    --         },
+    --         new_tab_hover = {
+    --             bg_color = "#6791c9",
+    --             fg_color = "#090909"
+    --         }
+    --     }
+    -- },
 
     -- Padding
     window_padding = {
@@ -241,21 +243,22 @@ return {
     -- Tab Bar
     enable_tab_bar = true,
     hide_tab_bar_if_only_one_tab = true,
-    show_tab_index_in_tab_bar = false,
-    tab_bar_at_bottom = false,
+    -- show_tab_index_in_tab_bar = true,
+    tab_bar_at_bottom = true,
+    use_fancy_tab_bar = false, -- 不使用系统的主题而使用color_scheme的主题
 
     -- General
     automatically_reload_config = true,
-    inactive_pane_hsb = {
-        saturation = 1.0,
-        brightness = 1.0
-    },
+    -- inactive_pane_hsb = {
+    --     saturation = 1.0,
+    --     brightness = 1.0
+    -- },
     window_background_opacity = 0.95,
-    window_close_confirmation = "NeverPrompt",
-    window_frame = {
-        active_titlebar_bg = "#24283b",
-        font = font_with_fallback(font_name, {
-            bold = true
-        })
-    }
+    -- window_close_confirmation = "NeverPrompt"
+    --     window_frame = {
+    --         active_titlebar_bg = "#24283b",
+    --         font = font_with_fallback(font_name, {
+    --             bold = true
+    --         })
+    --     }
 }
