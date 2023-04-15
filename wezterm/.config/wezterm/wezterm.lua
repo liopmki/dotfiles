@@ -240,6 +240,9 @@ return {
         bottom = 25
     },
 
+    -- Title bar
+    window_decorations = "NONE",
+
     -- Tab Bar
     enable_tab_bar = true,
     hide_tab_bar_if_only_one_tab = true,
