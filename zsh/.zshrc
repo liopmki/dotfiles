@@ -101,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # =My Alias=
+# ==sudo -E==
+alias sudo='sudo -E'
 # ==neovim==
 alias vim=lvim
 # ==flatpak==
