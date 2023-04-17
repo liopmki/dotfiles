@@ -1,5 +1,5 @@
 (require 'package)
-(setq package-archives '(("gnu"   . "http://1.15.88.122/gnu/")
+(setq package-archives '(("gnu"   . "https://elpa.gnu.org/packages/")
 
 			 ("melpa" . "http://1.15.88.122/melpa/")
 
@@ -129,19 +129,6 @@
   ;; Corrects (and improves) org-mode's native fontification.
   (doom-themes-org-config))
 
-;; 安装最新版本的org-mode
-(use-package org
-  :ensure t
-;  :config
- ; (setq org-emphasis-regexpcomponents
-;	'("-[:space:]('\"{"
-;          "-[:space:].,:!?;'\")}\\["
-;          "[:space:]"    ; Only use for foreign characters
-;          "."
-;          1)))
-(use-package org-contrib
-  :pin nongun
-  :ensure t
-  )
+
 
 (provide 'init-packages)

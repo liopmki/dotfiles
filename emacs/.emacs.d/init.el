@@ -1,7 +1,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
 (require 'base) ;; base setting
-;;(require 'org)  ;; org config
+(require 'init-org)  ;; org config
 (require 'init-packages)  ;; 初始化packages
 (require 'key-bindings) ;; keymaps
 
