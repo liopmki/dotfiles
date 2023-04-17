@@ -1,0 +1,14 @@
+* org-from-scratch
+
+配置一个以 org-mode 为核心的 emacs，
+实现便捷地使用 emacs 记笔记
+
+** DONE emacs的基本配置
+- 大量包使用use-package配置
+- 实现了补全、搜索等功能的加强
+- 安装了 doom-one theme
+
+** TODO org-mode的基本配置
+*** TODO 双链笔记
+*** TODO 图片插入
+*** TODO 快捷输入

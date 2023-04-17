@@ -3,7 +3,7 @@
 (require 'base) ;; base setting
 (require 'init-org)  ;; org config
 (require 'init-packages)  ;; 初始化packages
-(require 'key-bindings) ;; keymaps
+(require 'key-bindings) ;; 全局keymaps
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
