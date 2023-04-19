@@ -4,6 +4,7 @@
 (require 'init-org)  ;; org config
 (require 'init-packages)  ;; 初始化packages
 (require 'key-bindings) ;; 全局keymaps
+(require 'vim-evil) ;; vim keymaps
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
