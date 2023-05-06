@@ -27,9 +27,6 @@ echo $XDG_SESSION_TYPE
 ```
 2. 将`XKBOPTIONS="ctrl:swapcaps"` 添加到`/etc/default/keyboard`
 
-**TODO:**
-- [ ] 在不可变系统(Fedora Silverblue、OpenSuse Micro OS)和NixOS中实现
-
 > 这个切换ctrl和caps的命令可能不会生效
 > 我在popos的gnome和endeavouros的budgie中测试，popos中可以生效
 > budgie中不会生效
@@ -65,6 +62,7 @@ sudo apt install xcape
       StartupNotify=true
       ```
     2. `sudo chmod +x ~/.config/autostart/xcape.desktop`
+    
 ### Windows
 
 #### Autohotkey
@@ -181,5 +179,9 @@ g_ControlRepeatDetected := false
 
 #### 自动启动
 
+**方法1**
 1. 将脚本转为`.exe`文件
 2. 创建快捷方式，并将快捷方式移动到`C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup`
+
+**方法2**
+- 直接吧脚本放在`C:\Users\username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
