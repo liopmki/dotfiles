@@ -10,6 +10,12 @@
 
 ## 映射caps到esc和ctrl
 
+### Linux and Windows
+
+- [kmonad](https://github.com/kmonad/kmonad)
+
+我的 kmonad 配置：[liopmki/kmonad](https://github.com/liopmki/kmonad)
+
 ### Linux
 
 **核心思想：**
